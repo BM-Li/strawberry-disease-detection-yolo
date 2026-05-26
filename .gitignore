@@ -52,4 +52,6 @@ test_xin/
 /comparison_naive_cp.png
 /dedup_comparison_updated_final.png
 /naive_copypaste_problem.png
+/traditional_copypaste.png
+/dual_reservoir_copypaste.png
 /yolov8-eca.yaml
