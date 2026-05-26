@@ -1,0 +1,55 @@
+# Datasets are not tracked because public dataset redistribution rights
+# may vary by source and license.
+datasets/
+
+# Dataset/tool caches
+datasets/**/*.cache
+.cache/
+
+# Training outputs and experiment artifacts
+runs/
+results/
+models/
+wandb/
+
+# Model weights and exported binaries
+*.pt
+*.onnx
+*.engine
+*.torchscript
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# IDE/project-local settings
+.idea/
+.vscode/
+Ultralytics/
+
+# Logs
+*.log
+
+# Only keep the final dataset config.
+configs/*.yaml
+!configs/the_big.yaml
+
+# Only keep the final V3 training and copy-paste scripts.
+scripts/*.py
+!scripts/train_pipeline_v3.py
+!scripts/generate_anthracnose_copypaste.py
+!scripts/generate_leaf_copypaste.py
+
+# Local/old experimental scripts and utilities
+scripts/before/
+scripts/v8n_pd_gai/
+scripts/**/results/
+
+# Non-final local materials
+backgrounds/
+pic/
+test_xin/
+/comparison_naive_cp.png
+/dedup_comparison_updated_final.png
+/naive_copypaste_problem.png
+/yolov8-eca.yaml

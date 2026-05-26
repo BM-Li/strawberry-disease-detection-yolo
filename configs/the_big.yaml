@@ -1,0 +1,13 @@
+path: datasets/the_big
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 6
+names:
+  - Angular Leafspot
+  - Anthracnose Fruit Rot
+  - Gray Mold
+  - Leaf Spot
+  - Powdery Mildew Fruit
+  - Powdery Mildew Leaf
