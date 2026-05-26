@@ -23,6 +23,21 @@ https://universe.roboflow.com/search?q=strawberry+disease
 
 The datasets are not included in this repository because redistribution rights may vary across individual public dataset sources. Users should download data from the original sources, check the corresponding licenses, and prepare the local directory structure before training.
 
+Some public strawberry disease datasets include a `Blossom Blight` class. In this project, that class was removed from the final training set because its visual difference from normal strawberry flowers can be extremely subtle and label ambiguity may introduce noise into the detector. The final model therefore focuses on six disease categories with clearer visual symptoms.
+
+## Disease Classes
+
+The final detector uses the following six classes:
+
+| Class ID | Disease class |
+| ---: | --- |
+| 0 | Angular Leafspot |
+| 1 | Anthracnose Fruit Rot |
+| 2 | Gray Mold |
+| 3 | Leaf Spot |
+| 4 | Powdery Mildew Fruit |
+| 5 | Powdery Mildew Leaf |
+
 ## Why Data Preprocessing Matters
 
 Public strawberry disease datasets are useful starting points, but they often contain issues that can make validation results overly optimistic or reduce real-world robustness:
